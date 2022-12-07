@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { GithubIcon, LinkedinIcon } from "../common/Icons";
 import AboutMe from "./PageAboutMe";
+import PageEducation from "../Pages/PageEducation";
 import styled from "styled-components";
 
 export default function PageHome() {
@@ -42,13 +43,15 @@ export default function PageHome() {
           </h2>
           <p>
             Olá, eu sou a Brunna. Seja bem-vindo(a) ao meu portfólio! Aqui você
-            irá encontrar informações sobre mim, minha formação, skills e projetos que
-            participei. Dúvidas? Entre em{" "}
+            irá encontrar informações sobre mim, minha formação, skills e
+            projetos que participei. Dúvidas? Entre em{" "}
             <span onClick={() => scrollToSection(contact)}>contato</span>.
           </p>
         </Description>
         <Background></Background>
         <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG0wEMp79SQ4w/profile-displayphoto-shrink_800_800/0/1642774449257?e=1675900800&v=beta&t=nJsOkkJkWoCVlH63GWL_X_hKp9Ln8OFKPKV39jZAy7Y" />
+        <Board />
+        <Board2 />
         <Icon>
           <a href="https://github.com/brunnaserafina" target="_blank">
             <GithubIcon
@@ -71,17 +74,40 @@ export default function PageHome() {
         </Icon>
       </Home>
 
-      <About ref={about}><AboutMe /></About>
-      <Education ref={education}>Formação</Education>
+      <About ref={about}>
+        <AboutMe />
+      </About>
+
+      <Education ref={education}>
+        <PageEducation />
+      </Education>
+
       <HardSkills ref={hardSkills}>Hard Skills</HardSkills>
       <Achievements ref={achievements}>Certificados</Achievements>
       <Projects ref={projects}>Projetos</Projects>
       <Contact ref={contact}>Contato</Contact>
-
-      
     </Wrapper>
   );
 }
+
+const Board = styled.div`
+  width: 300px;
+  height: 400px;
+  border: 3px solid yellow;
+  position: absolute;
+  right: 600px;
+  top: 260px;
+  filter: blur(5px);
+`;
+
+const Board2 = styled.div`
+  width: 300px;
+  height: 400px;
+  border: 0.5px solid white;
+  position: absolute;
+  right: 600px;
+  top: 260px;
+`;
 
 const Wrapper = styled.div`
   overflow-x: hidden;
