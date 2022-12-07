@@ -55,13 +55,27 @@ table {
   box-sizing: border-box;
 }
 
-body {
+.root {
   font-family: Lexend Deca;
-  background-color: #919974;
+  background: linear-gradient(0deg, rgba(0,160,194,1) 0%, rgba(252,48,48,1) 100%);
 }
 
 a {
   text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+	 background: #494c4e      /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #494c4e;  /* creates padding around scroll thumb */
 }
 `;
 
