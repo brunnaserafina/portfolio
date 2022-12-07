@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { GithubIcon, LinkedinIcon } from "../common/Icons";
+import AboutMe from "./PageAboutMe";
 import styled from "styled-components";
 
 export default function PageHome() {
@@ -40,9 +41,8 @@ export default function PageHome() {
             DEVELOPER.
           </h2>
           <p>
-            Olá, eu sou a Brunna, estou iniciando a minha carreira em
-            desenvolvimento web. Seja bem-vindo(a) ao meu portfólio! Aqui você
-            irá encontrar informações sobre mim, minha formação e projetos que
+            Olá, eu sou a Brunna. Seja bem-vindo(a) ao meu portfólio! Aqui você
+            irá encontrar informações sobre mim, minha formação, skills e projetos que
             participei. Dúvidas? Entre em{" "}
             <span onClick={() => scrollToSection(contact)}>contato</span>.
           </p>
@@ -71,7 +71,7 @@ export default function PageHome() {
         </Icon>
       </Home>
 
-      <About ref={about}>Sobre mim</About>
+      <About ref={about}><AboutMe /></About>
       <Education ref={education}>Formação</Education>
       <HardSkills ref={hardSkills}>Hard Skills</HardSkills>
       <Achievements ref={achievements}>Certificados</Achievements>
@@ -183,7 +183,7 @@ const Home = styled.div`
     top: 15vw;
     right: 65vh;
     object-fit: cover;
-    border: 3px solid #494c4e;
+    //border: 3px solid #494c4e;
   }
 `;
 
