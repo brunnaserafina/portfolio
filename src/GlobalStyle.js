@@ -62,6 +62,7 @@ table {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 body::-webkit-scrollbar {

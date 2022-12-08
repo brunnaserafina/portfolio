@@ -116,10 +116,9 @@ const Skills = styled.div`
   }
 
   div {
-    //carousel_img
     width: 200px;
     height: 200px;
-    background-color: gray;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,5 +130,9 @@ const Skills = styled.div`
   img {
     width: 60px;
     margin-bottom: 20px;
+  }
+
+  p {
+    color: black;
   }
 `;

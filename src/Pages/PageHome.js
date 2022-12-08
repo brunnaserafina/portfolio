@@ -3,6 +3,7 @@ import { GithubIcon, LinkedinIcon } from "../common/Icons";
 import AboutMe from "./PageAboutMe";
 import PageEducation from "../Pages/PageEducation";
 import PageSkills from "../Pages/PageSkills";
+import PageCertificates from "./PageCertificates";
 import styled from "styled-components";
 
 export default function PageHome() {
@@ -86,8 +87,11 @@ export default function PageHome() {
       <HardSkills ref={hardSkills}>
         <PageSkills />
       </HardSkills>
+
+      <Achievements ref={achievements}>
+        <PageCertificates />
+      </Achievements>
       
-      <Achievements ref={achievements}>Certificados</Achievements>
       <Projects ref={projects}>Projetos</Projects>
       <Contact ref={contact}>Contato</Contact>
     </Wrapper>

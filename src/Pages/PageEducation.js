@@ -40,7 +40,7 @@ export default function PageEducation() {
 const Conjunto = styled.div`
   display: flex;
   padding: 25px;
-  background-color: gray;
+  background-color: black;
   height: 150px;
   border-radius: 30px;
   margin-bottom: 30px;
@@ -48,7 +48,7 @@ const Conjunto = styled.div`
 
 const Description = styled.div`
   h3 {
-    color: pink;
+    color: #d07c3d;
     margin-bottom: 15px;
   }
 
@@ -56,10 +56,12 @@ const Description = styled.div`
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 500;
+    color: #87cefa;
   }
 
   p {
     font-size: 18px;
+    color: #d07c3d;
   }
 `;
 
@@ -67,7 +69,7 @@ const Circle = styled.div`
   width: 60px;
   height: 60px;
   border-radius: 35px;
-  background-color: red;
+  background-color: #87cefa;
   display: flex;
   justify-content: center;
   align-items: center;
