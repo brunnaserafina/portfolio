@@ -129,7 +129,7 @@ const Skills = styled.div`
   }
 
   img {
-    width: 80px;
-    margin-bottom: 10px;
+    width: 60px;
+    margin-bottom: 20px;
   }
 `;
