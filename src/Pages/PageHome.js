@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { GithubIcon, LinkedinIcon } from "../common/Icons";
 import AboutMe from "./PageAboutMe";
 import PageEducation from "../Pages/PageEducation";
+import PageSkills from "../Pages/PageSkills";
 import styled from "styled-components";
 
 export default function PageHome() {
@@ -82,7 +83,10 @@ export default function PageHome() {
         <PageEducation />
       </Education>
 
-      <HardSkills ref={hardSkills}>Hard Skills</HardSkills>
+      <HardSkills ref={hardSkills}>
+        <PageSkills />
+      </HardSkills>
+      
       <Achievements ref={achievements}>Certificados</Achievements>
       <Projects ref={projects}>Projetos</Projects>
       <Contact ref={contact}>Contato</Contact>
